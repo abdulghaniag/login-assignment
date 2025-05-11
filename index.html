@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let attempt = 0
+     for(let i=0; i< 3; i++ ){
+     let userPassword = prompt("Enter your password")
+     let correctPassword = 1234
+     if(userPassword == correctPassword){
+          alert("login Successfull")
+          break
+     }else{
+        attempt++
+        if(attempt==3){
+        alert("Phone is temporary locked")
+        break
+    }else{
+            alert(`${3-attempt} chance remaining`)
+        }
+     }
+    }
+    </script>
+</body>
+</html>
